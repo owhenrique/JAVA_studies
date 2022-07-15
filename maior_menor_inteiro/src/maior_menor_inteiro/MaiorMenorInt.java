@@ -1,19 +1,20 @@
-package maior_menor_inteiro;
-
 import java.util.Scanner;
 
 public class MaiorMenorInt {
 
 	public static void main(String[] args) 
 	{
-		final int ENTRADAS = 3;
 		
 		Scanner sc = new Scanner (System.in);
 		
+		System.out.print("Digite o número de entradas que deseja inserir: ");
+		
+		int num_entradas = sc.nextInt();
+				
 		int menor = Integer.MAX_VALUE;
 		int maior = Integer.MIN_VALUE;
 		
-		for(int i = 0; i < ENTRADAS; i++)
+		for(int i = 0; i < num_entradas; i++)
 		{
 			if(i == 0)
 				System.out.print("Digite um número: ");
